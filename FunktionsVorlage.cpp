@@ -1,5 +1,5 @@
 /** 
- * File: filename.c
+ * File: filename.cpp
  * Author: Georg Pohl
  * Date of creation: 1st of January 2021
  * Version: 1.0
@@ -13,15 +13,14 @@
  */
 
 // no absolute path entries
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
 #include "filename.h"
 
 /* EXTERNAL AND GLOBAL VARIABLES */
 
 /* CONSTANTS */
 
-/* STRUCTS, TYPEALIASE */
+/* STRUCTS, CLASSES, TYPEALIASE */
 
 /* STATIC VARIABLES */
 
@@ -43,4 +42,4 @@ int foo(int x) {
   return EXIT_SUCCESS;
 }
 
-/* End of filename.c */
+/* End of filename.cpp */
