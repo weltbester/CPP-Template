@@ -1,5 +1,5 @@
 /** 
- * File: filename.h
+ * File: filename.hpp
  * Author: Georg Pohl
  * Date of creation: 1st of January 2021
  * Version: 1.0
@@ -11,11 +11,11 @@
  *
  * Copyright (C) Jan. 2021: Georg Pohl, 70174 Stuttgart
  */
-#ifndef FILENAME_H_
-#define FILENAME_H_
+#ifndef FILENAME_HPP_
+#define FILENAME_HPP_
 
 // no absolute path entries
-#include <stdio.h>
+#include <iostream>
 
 
 // Typaliase (typedef)
@@ -25,5 +25,5 @@
 // Makros, Declarations, ...
   int foo(int x);
 
-#endif */ FILENAME_H_ */
-/* End of filename.h */
+#endif */ FILENAME_HPP_ */
+/* End of filename.hpp */
