@@ -1,5 +1,5 @@
 /** 
- * File: filename.c
+ * File: filename.cpp
  * Author: Georg Pohl
  * Date of creation: 1st of January 2021
  * Version: 1.0
@@ -16,12 +16,11 @@
 Commands ...
 #endif /* MACOS */
 
-#include <stdio.h>
-#include <stdlib.h>
+#include <iostream>
 
 /* CONSTANTS */
 
-/* STRUCTS */
+/* STRUCTS, CLASSES */
 class human : public std::string {
     
   // Default construktor sufficient
@@ -41,4 +40,4 @@ int main(int argc, const char **argv) {
 
 /* FUNCTIONS */
 
-/* End of filename.c */
+/* End of filename.cpp */
