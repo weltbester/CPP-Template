@@ -1,19 +1,19 @@
-CC = gcc
-CFLAGS = -std=gnu99 -pedantic -Wall -Wwrite-strings -O3
-DBGFLAGS = -std=gnu99 -pedantic -Wall -Wwrite-strings -ggdb3 -DDEBUG
-SRCS=$(wildcard *.c)
-OBJS=$(patsubst %.c,%.o,$(SRCS))
-DBGOBJS=$(patsubst %.c,%.dbg.o,$(SRCS))
+CXX = g++
+CXXFLAGS = -pedantic -Wall -Wextra -Wwrite-strings -O3 -std=c++2a
+DBGFLAGS = -pedantic -Wall -Wextra -Wwrite-strings -ggdb3 -DDEBUG -std=c++2a
+SRCS=$(wildcard *.cpp)
+OBJS=$(patsubst %.cpp,%.o,$(SRCS))
+DBGOBJS=$(patsubst %.cpp,%.dbg.o,$(SRCS))
 .PHONY: clean depend all
 all: myProgram myProgram-debug
 myProgram: $(OBJS)
-	   gcc -o $@ -O3 $(OBJS)
+	   g++ -o $@ -O3 $(OBJS)
 myProgram-debug: $(DBGOBJS)
-		 gcc -o $@ -ggdb3 $(DBGOBJS)
-%.dbg.o: %.c
-	 gcc $(DBGFLAGS) -c -o $@ $<
+		 g++ -o $@ -ggdb3 $(DBGOBJS)
+%.dbg.o: %.cpp
+	 g++ $(DBGFLAGS) -c -o $@ $<
 clean:
-	rm -f myProgram myProgram-debug *.o *.c~ *.h~
+	rm -f myProgram myProgram-debug *.o *.cpp~ *.hpp~
 depend:
 	makedepend $(SRCS)
 	makedepend -a -o .dbg.o  $(SRCS)
