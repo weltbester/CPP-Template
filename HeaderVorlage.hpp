@@ -5,9 +5,12 @@
  * Version: 1.0
  * Last change: 1st of January 2021
  * -------------------------------------
- * Description:
- *  Insert description here...
- *  ...
+ * Implementation notes: <functionName>
+ * -------------------------------------
+ * Here you can describe in detail how
+ * the implementation is done, what are
+ * the corner cases and what problems
+ * can arise due to wrong usage.
  *
  * Copyright (C) Jan. 2021: Georg Pohl, 70174 Stuttgart
  */
