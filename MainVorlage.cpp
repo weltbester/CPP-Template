@@ -26,10 +26,32 @@ using std::endl;
 
 /* STRUCTS, CLASSES */
 class human : public std::string {
+    public:
+        // Constants, Typealiase
     
-  // Default construktor sufficient
+        // Constructor
+            // Or message, why there is no Destructor: e. g. "Default construktor sufficient"
     
-  Methods ...
+        // Destructor
+    
+        // Virtual methods
+    
+        // Member variables
+    
+        // Operators (new, delete ...)
+    
+    protected:
+        // Constants, Typealiase, Member variables
+    
+        // Operators (new, delete ...)
+    
+        // Methods
+    private:
+        // Constants, Typealiase, Member variables
+    
+        // Operators (new, delete ...)
+    
+        // Methods
 }
 
 /* PROTOTYPES */
