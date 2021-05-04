@@ -14,6 +14,8 @@ myProgram-debug: $(DBGOBJS)
 	 g++ $(DBGFLAGS) -c -o $@ $<
 clean:
 	rm -f myProgram myProgram-debug *.o *.cpp~ *.hpp~
+	find . -type f | xargs touch
+        rm -rf $(OBJS)
 depend:
 	makedepend $(SRCS)
 	makedepend -a -o .dbg.o  $(SRCS)
